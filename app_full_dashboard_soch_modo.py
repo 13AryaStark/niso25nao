@@ -48,5 +48,5 @@ for col in columns_to_show:
         st.error(f"Отсутствует столбец: {col}")
 
 styled = df_goal[columns_to_show].sort_values("СОЧ (%)", ascending=False)
-styled_df = styled.style.background_gradient(cmap="RdYlGn_r", subset=["Отклонение"])
-st.dataframe(styled_df, use_container_width=True)
+styled = df_goal[columns_to_show].sort_values("СОЧ (%)", ascending=False)
+st.dataframe(styled, use_container_width=True)
