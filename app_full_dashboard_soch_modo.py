@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv("nisoplus_full_integrated_clean.csv")
+df = pd.read_csv("nisoplus_full_integrated.csv")
 
 st.set_page_config(page_title="НИСО+: Полный дэшборд", layout="wide")
 st.title("📊 НИСО+: Интеграция СОЧ и МОДО по Целям Обучения")
